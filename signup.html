@@ -9,11 +9,23 @@
 </head>
 <body>
 <div class="container">
-    <h5>Material Design Login Form</h5>
+    <h5>Material Design Signup Form</h5>
     <div id="user-login" class="row">
         <div class="col s12 z-depth-6 card-panel">
             <form class="login-form" name="login-form" method="POST"
                 action="">
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input class="validate" id="fullname"
+                            name="fullname" type="text" required>
+                        
+                        <label for="fullname" data-error="wrong"
+                            data-success="right" class="center-align">Full Name</label>
+                    </div>
+                </div>
+
                 <div class="row margin">
                     <div class="input-field col s12">
                         <i class="mdi-social-person-outline prefix"></i>
@@ -27,34 +39,51 @@
 
                 <div class="row margin">
                     <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input class="validate" id="email"
+                            name="email" type="email" required>
+                        
+                        <label for="email" data-error="wrong"
+                            data-success="right" class="center-align">E-mail Address</label>
+                    </div>
+                </div>
+
+                <div class="row margin">
+                    <div class="input-field col s12">
                         <i class="mdi-action-lock-outline prefix"></i> <input
-                            id="user_pass" name="user_pass" class="validate"
+                            id="user_pass" name="user_pass"
                             type="password" required>
                        
                         <label for="password">Password</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12 m12 l12  login-text">
-                        <input type="checkbox" id="remember-me"> <label
-                            for="remember-me">Remember me</label>
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i> <input
+                            id="re_user_pass" name="re_user_pass"
+                            type="password" required>
+                       
+                        <label for="repassword">Re-Type Password</label>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="input-field col s12">
 
                         <input type="submit"
                             class="btn waves-effect waves-light col s12"
-                            id="btnsubmit" name="submit" value="Login" />
+                            id="btnsubmit" name="submit" value="Signup" />
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <label for="account">No Account?</label>
-                        <a href="signup.html">SIGNUP</a>
+                        <label for="account">Already Have An Account?</label>
+                        <a href="index.html">LOGIN</a>
                     </div>
                 </div>
+
 
             </form>
 
